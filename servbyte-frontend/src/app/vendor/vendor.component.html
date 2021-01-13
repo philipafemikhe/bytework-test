@@ -1,0 +1,33 @@
+<div class="container" style="margin-top: 2em;">
+    <h3>Food Service Providers</h3>
+</div>
+
+<div class="container">
+    <h3>Vendor List</h3>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Provider</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let foodVendor of foodVendors, index as i">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ foodVendor.provider_name }}</td>
+                    <td>{{ foodVendor.email }}</td>
+                    <td>{{ foodVendor.phone }}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="row" *ngFor="let foodVendor of foodVendors">
+       
+    </div>
+</div>
+

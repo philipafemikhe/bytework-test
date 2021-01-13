@@ -19,7 +19,9 @@ public class FoodVendorService {
     }
 
     public List<FoodProvider> getAll() {
-        return this.foodProviderRepository.findAll();
+        List<FoodProvider> providers = this.foodProviderRepository.findAll();
+        System.out.println(providers.toString());
+        return providers;
     }
 
     public FoodProvider getOne(Long id) {

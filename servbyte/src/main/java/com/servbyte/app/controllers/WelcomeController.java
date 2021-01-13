@@ -2,11 +2,8 @@ package com.servbyte.app.controllers;
 
 import com.servbyte.app.entities.Customer;
 import com.servbyte.app.services.CustomerService;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +14,9 @@ public class WelcomeController {
 
     @Autowired
     CustomerService customerService;
+
+
+
 
     @GetMapping("/")
     public ArrayList<String> welcome(){
